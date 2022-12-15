@@ -1,6 +1,9 @@
 # oi-lume-template
 
+
 Welcome to the OI Lume Template.
+You can see what this looks like by visiting 
+<https://open-innovations.github.io/oi-lume-template/>.
 
 You'll need to customise some things to get started:
 

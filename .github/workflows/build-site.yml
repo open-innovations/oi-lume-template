@@ -7,6 +7,12 @@ name: Build site
   #   - cron:  '45 23 * * *'
   push:
     branches: [ main ]
+    paths:
+      - 'src/**'
+      - '_config.js'
+      - 'deno.json'
+      - 'import_map.json'
+      - '.github/workflows/build-site.yml'
 
 jobs:
   build:
