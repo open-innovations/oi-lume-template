@@ -33,8 +33,7 @@ jobs:
           deno task build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact 
-        uses: crazy-max/ghaction-github-pages@v3
+        uses: actions/upload-pages-artifact@v1
         with:
           path: _site
 
