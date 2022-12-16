@@ -20,22 +20,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clone repository
-        uses: actions/checkout@v3
-
-      - name: Setup Deno environment
-        uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x
-
-      - name: Build site
-        run: |
-          deno task build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: _site
+      - name: Build the site
+        uses: dringtech/lume-build@v1-pre
 
   # Deploy job
   deploy:
