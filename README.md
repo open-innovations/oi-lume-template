@@ -23,3 +23,22 @@ You'll need to customise some things to get started:
       for more information.
 * Edit the title of this page in the frontmatter above. You can override the
   template by setting the `layout` key. 
+* Remove all this stuff from this `README` and write your own!
+
+## Using this template
+
+Either
+[create a new repoistory from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+or use the `degit` tool. 
+
+```sh
+npx degit https://github.com/open-innovations/oi-lume-template/ my-local-path
+```
+
+The latter is more flexible, as it allows you to insert the template into an existing repository, but comes at the cost of having to have [`npx`](https://www.npmjs.com/package/npx) installed on your system, which in turn needs [`node` and `npm`](https://nodejs.org/en/download).
+I'd recomment the LTS (Long Term Support) version of `node` if you have to make a choice!.
+
+## Deploying a GitHub site
+
+The page is set up 
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow

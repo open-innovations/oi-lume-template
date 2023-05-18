@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: Build the site
-        uses: dringtech/lume-build@v1-pre
+        uses: dringtech/lume-build@v1.1.0
 
   # Deploy job
   deploy:
@@ -39,8 +39,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     # Specify runner + deployment step
+    # You need to set up GitHub Pages to deploy from an action
+    # See https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow for documentation
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2
