@@ -88,6 +88,7 @@ pre { max-width: 100%; overflow-x: auto; padding: 16px; margin-bottom: 16px; }
 pre code { padding: 0; }
 ul { list-style: disc; }
 ol { list-style: decimal; }
+ul { padding: 0; margin-left: 2em; }
 .msg { text-align:center; padding: 0.5em; }
 
 .holder { position: relative; width: 1080px; max-width: 100%; margin: auto; }
@@ -155,6 +156,7 @@ header nav ul > li > a:hover, header nav ul > li > a:focus { background: white; 
 
 .elsewhere { float: right; margin-top: 0; }
 .elsewhere li { display: inline-block; margin-left: 0.5em; }
+.elsewhere li:first-child { margin-left: 0; }
 .elsewhere li a { line-height: 0; display: block; }
 footer .address { margin-top: 1em; }
 footer a { color: inherit; }
@@ -163,4 +165,8 @@ footer hr.about { margin: 32px 0; border: 0; border-top:1px solid #444; }
 @media only screen and (max-width: 1080px) {
 	.grid { grid-template-columns: 100%; }
 	.grid-list { grid-template-columns: repeat(2,1fr); grid-gap: 0.25em; }
+}
+
+@media only screen and (max-width: 800px) {
+	.elsewhere { float:none; margin-left: 0; margin-bottom: 1em; }
 }
